@@ -15,7 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   device_preview: ^1.2.0
-  translator: ^1.0.2
+  google_cloud_translation: ^0.0.4
 
 
 dev_dependencies:
