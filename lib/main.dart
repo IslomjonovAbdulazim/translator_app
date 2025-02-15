@@ -86,6 +86,7 @@ class _HomePageState extends State<HomePage> {
                       color: blueColor,
                       borderRadius: BorderRadius.circular(20),
                     ),
+
                     child: Row(
                       children: [
                         Expanded(
@@ -96,6 +97,7 @@ class _HomePageState extends State<HomePage> {
                               if (val == null || val == outputLanguage) return;
                               inputLanguage = val;
                               setState(() {});
+                              translate();
                             },
                             style: GoogleFonts.barlow(
                               color: textColor,
@@ -129,6 +131,7 @@ class _HomePageState extends State<HomePage> {
                                 if (val == null || val == inputLanguage) return;
                                 outputLanguage = val;
                                 setState(() {});
+                                translate();
                               },
                               style: GoogleFonts.barlow(
                                 color: textColor,
@@ -213,7 +216,6 @@ class _HomePageState extends State<HomePage> {
                           controller: inputController,
                           focusNode: inputFocus,
                           maxLength: 500,
-
                           onSubmitted: (va) {
                             translate();
                           },
