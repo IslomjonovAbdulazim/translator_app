@@ -86,7 +86,6 @@ class _HomePageState extends State<HomePage> {
                       color: blueColor,
                       borderRadius: BorderRadius.circular(20),
                     ),
-
                     child: Row(
                       children: [
                         Expanded(
