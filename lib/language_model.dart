@@ -1,27 +1,30 @@
-class LanguageModel {
-  late String code;
-  late String name;
+import 'package:equatable/equatable.dart';
 
-  LanguageModel({required this.code, required this.name});
+
+class LanguageModel extends Equatable {
+  final String code;
+  final String name;
+  final String locale;
+
+  const LanguageModel({
+    required this.code,
+    required this.name,
+    required this.locale,
+  });
+
+  @override
+  List get props => [code];
 }
 
 List<LanguageModel> languages = [
-  LanguageModel(code: "en", name: "English"),
-  LanguageModel(code: "uz", name: "Uzbek"),
-  LanguageModel(code: "ru", name: "Russian"),
-  LanguageModel(code: "zh", name: "Chinese (Mandarin)"),
-  LanguageModel(code: "es", name: "Spanish"),
-  LanguageModel(code: "ar", name: "Arabic"),
-  LanguageModel(code: "fr", name: "French"),
-  LanguageModel(code: "de", name: "German"),
-  LanguageModel(code: "ja", name: "Japanese"),
-  LanguageModel(code: "ko", name: "Korean"),
-  LanguageModel(code: "tr", name: "Turkish"),
-  LanguageModel(code: "kk", name: "Kazakh"),
-  LanguageModel(code: "tk", name: "Turkmen"),
-  LanguageModel(code: "ky", name: "Kyrgyz"),
-  LanguageModel(code: "tg", name: "Tajik"),
-  LanguageModel(code: "fa", name: "Persian (Farsi)"),
-  LanguageModel(code: "az", name: "Azerbaijani"),
-  LanguageModel(code: "uk", name: "Ukrainian"),
+  LanguageModel(code: "en", name: "English", locale: "en-US"),
+  LanguageModel(code: "uz", name: "Uzbek", locale: "uz-UZ"),
+  LanguageModel(code: "ru", name: "Russian", locale: "ru-RU"),
+  LanguageModel(code: "zh", name: "Mandarin", locale: "zh-CN"),
+  LanguageModel(code: "es", name: "Spanish", locale: "es-ES"),
+  LanguageModel(code: "fr", name: "French", locale: "fr-FR"),
+  LanguageModel(code: "de", name: "German", locale: "de-DE"),
+  LanguageModel(code: "ja", name: "Japanese", locale: "ja-JP"),
+  LanguageModel(code: "ko", name: "Korean", locale: "ko-KR"),
+  LanguageModel(code: "tr", name: "Turkish", locale: "tr-TR"),
 ];
