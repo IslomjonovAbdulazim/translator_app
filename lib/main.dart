@@ -16,6 +16,7 @@ Color blueColor = Color(0xff1A254F);
 Color greyButtonColor = Color(0xffA1A9C8);
 Color greyTextColor = Color(0xffBCC7EF);
 
+
 void main() {
   runApp(const TranslatorApp());
 }
