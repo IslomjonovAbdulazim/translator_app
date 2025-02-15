@@ -10,7 +10,6 @@ String apiKey = "AIzaSyCIyR35pgtP3spCguV6MprjB1W-RSWJWTA";
 Color backgroundColor = Color(0xff141F47);
 Color inputColor = Color(0xff1C2D6B);
 
-
 Color outputColor = Color(0xff556BBE);
 Color textColor = Color(0xffFFFFFF);
 Color buttonColor = Color(0xff152F8D);
