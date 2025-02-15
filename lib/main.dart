@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:google_cloud_translation/google_cloud_translation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:translator_app/language_model.dart';
+
 String apiKey = "AIzaSyCIyR35pgtP3spCguV6MprjB1W-RSWJWTA";
 Color backgroundColor = Color(0xff141F47);
 Color inputColor = Color(0xff1C2D6B);
+
 Color outputColor = Color(0xff556BBE);
 Color textColor = Color(0xffFFFFFF);
 Color buttonColor = Color(0xff152F8D);
