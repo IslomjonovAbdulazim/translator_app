@@ -213,6 +213,7 @@ class _HomePageState extends State<HomePage> {
                           controller: inputController,
                           focusNode: inputFocus,
                           maxLength: 500,
+
                           onSubmitted: (va) {
                             translate();
                           },
