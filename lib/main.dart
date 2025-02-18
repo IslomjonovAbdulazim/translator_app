@@ -20,6 +20,7 @@ Color blueColor = Color(0xff1A254F);
 Color greyButtonColor = Color(0xffA1A9C8);
 Color greyTextColor = Color(0xffBCC7EF);
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations(
@@ -258,6 +259,29 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 10),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: buttonColor,
+                  fixedSize: Size.fromHeight(55),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                onPressed: () async {
+                  translate();
+                },
+                child: Center(
+                  child: Text(
+                    "Translate",
+                    style: GoogleFonts.barlow(
+                      fontSize: 20,
+                      color: textColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
               Expanded(
                 child: Container(
                   padding: EdgeInsets.all(12),
@@ -340,29 +364,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 10),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: buttonColor,
-                  fixedSize: Size.fromHeight(55),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-                onPressed: () async {
-                  translate();
-                },
-                child: Center(
-                  child: Text(
-                    "Translate",
-                    style: GoogleFonts.barlow(
-                      fontSize: 20,
-                      color: textColor,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
             ],
           ),
         ),
@@ -370,3 +371,10 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+
+
+
+
+
