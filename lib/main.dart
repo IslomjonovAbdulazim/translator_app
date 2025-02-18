@@ -30,8 +30,6 @@ void main() async {
 }
 
 
-
-
 class TranslatorApp extends StatelessWidget {
   const TranslatorApp({super.key});
 
