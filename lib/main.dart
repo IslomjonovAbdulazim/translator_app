@@ -29,7 +29,6 @@ void main() async {
   runApp(const TranslatorApp());
 }
 
-
 class TranslatorApp extends StatelessWidget {
   const TranslatorApp({super.key});
 
